@@ -1,6 +1,6 @@
 # Contribuindo
 
-As contribuições são ** bem-vindas ** e serão totalmente ** creditadas **.
+As contribuições são **bem-vindas** e serão totalmente **creditadas**.
 Leia e compreenda o guia de contribuição antes de criar uma issue ou um pull request.
 
 ## Respeito
