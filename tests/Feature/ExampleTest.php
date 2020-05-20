@@ -2,14 +2,14 @@
 
 namespace Bnw\Skeleton\Tests\Feature;
 
-use Bnw\SkeletonLaravel\Tests\TestCase;
+use Bnw\Skeleton\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
     /** @test */
     public function basicTest()
     {
-        $response = $this->get('/');
+        $response = $this->get('/teste');
         $response->assertStatus(200);
         $this->assertTrue(true);
     }

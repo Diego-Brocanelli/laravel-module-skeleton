@@ -2,7 +2,7 @@
 
 namespace Bnw\Skeleton\Tests\Unit;
 
-use Bnw\SkeletonLaravel\Tests\TestCase;
+use Bnw\Skeleton\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {

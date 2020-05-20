@@ -1,7 +1,8 @@
 <?php
 
-namespace Bnw\SkeletonLaravel\Tests;
+namespace Bnw\Skeleton\Tests;
 
+use Bnw\Skeleton\SkeletonServiceProvider;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Encryption\Encrypter;
 
@@ -22,9 +23,14 @@ trait CreatesApplication
         // por esse motivo, como o módulo utilizar uma instalação limpa do Laravel,
         // é preciso gerar uma chava em tempo de execução para que os testes de funcionalidade
         // possam funcionar normalmente
-        $cipher = $app->make('config')->get('app.cipher');
+        $config = $app->make('config');
+
+        $cipher = $config->get('app.cipher');
         $key = 'base64:'.base64_encode(Encrypter::generateKey($cipher));
         $app->make('config')->set('app.key', $key);
+
+        // disponibiliza este módulo para o Laravel
+        $app->register(SkeletonServiceProvider::class);
 
         return $app;
     }

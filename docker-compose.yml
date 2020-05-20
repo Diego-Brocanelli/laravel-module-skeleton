@@ -1,0 +1,29 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+
+    webserver:
+      image: nginx:alpine
+      container_name: skeleton-webserver
+      working_dir: /application
+      volumes:
+          - ./vendor/laravel/laravel/:/application
+          - ./.docker/bootstrap/:/application/bootstrap/cache/
+          - ./.docker/storage/:/application/storage/
+          - ./.docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "2020:80"
+
+    php-fpm:
+      build: .docker/php-fpm
+      container_name: skeleton-php
+      working_dir: /application
+      volumes:
+        - ./vendor/laravel/laravel/:/application
+        - ./vendor/:/application/vendor/
+        - ./.docker/bootstrap/:/application/bootstrap/cache/
+        - ./.docker/storage/:/application/storage/
+        - ./.docker/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+

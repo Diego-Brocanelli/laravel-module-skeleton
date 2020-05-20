@@ -1,6 +1,6 @@
 <?php
 
-namespace Bnw\SkeletonLaravel\Tests;
+namespace Bnw\Skeleton\Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
