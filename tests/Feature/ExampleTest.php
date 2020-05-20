@@ -9,7 +9,7 @@ class ExampleTest extends TestCase
     /** @test */
     public function basicTest()
     {
-        $response = $this->get('/teste');
+        $response = $this->get('/');
         $response->assertStatus(200);
         $this->assertTrue(true);
     }

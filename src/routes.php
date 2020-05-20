@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/teste', function () {
+// Route::get('/teste', function () {
 
-    return []; //view('skeleton::folder.teste');
-});
+//     return []; //view('skeleton::folder.teste');
+// });
 
 Route::namespace('Bnw\Skeleton\Controllers')->group(function(){
 
