@@ -2,8 +2,7 @@
 
 namespace Bnw\Skeleton\Tests\Unit;
 
-use Carbon\Carbon;
-use PHPUnit\Framework\TestCase;
+use Bnw\SkeletonLaravel\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
