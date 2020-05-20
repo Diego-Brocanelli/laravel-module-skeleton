@@ -1,7 +1,7 @@
 <?php
 namespace Bnw\Skeleton\Controllers;
 
-use Bnw\Skeleton\Controllers\BaseController;
+use Bnw\Skeleton\Http\Controllers\BaseController;
 
 class TesteController extends BaseController
 {

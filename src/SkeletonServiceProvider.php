@@ -57,17 +57,17 @@ class SkeletonServiceProvider extends ServiceProvider
         // O 'mergeConfigFrom' junta os valores do arquivo de configuração disponíveis no módulo
         // com o o arquivo de mesmo nome, publicado no projeto principal do Laravel
         // para que não existam inconsistencias ou ausência de parâmetros usados pelo módulo
-        $this->mergeConfigFrom(__DIR__.'/config/skeleton.php', 'skeleton');
+        $this->mergeConfigFrom(__DIR__.'/Config/skeleton.php', 'skeleton');
 
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
 
         // Nos templates do Blade as views do módulo devem ser utilizadas com prefixo.
         // Ao invés de @include('minha.linda.view'), 
         // deve-se usar @include('skeleton::minha.linda.view')
-        $this->loadViewsFrom(__DIR__ . '/resources/views/', 'skeleton');
+        $this->loadViewsFrom(__DIR__ . '/Resources/views/', 'skeleton');
         
-        $this->loadMigrationsFrom(__DIR__ . '/database/migrations/', 'skeleton');
-        $this->loadTranslationsFrom(__DIR__ . '/resources/lang/', 'skeleton');
+        //$this->loadMigrationsFrom(__DIR__ . '/database/migrations/', 'skeleton');
+        $this->loadTranslationsFrom(__DIR__ . '/Resources/lang/', 'skeleton');
 
         // Disponibiliza a classe principal do módulo como um alias acessível
         // pelo namespace 'skeleton'

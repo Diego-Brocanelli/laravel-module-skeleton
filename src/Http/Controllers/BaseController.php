@@ -1,6 +1,6 @@
 <?php
 
-namespace Bnw\Skeleton\Controllers;
+namespace Bnw\Skeleton\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
