@@ -1,4 +1,4 @@
-#  Skeleton Laravel
+# Skeleton Laravel
 
 ![PHP Version](https://img.shields.io/badge/php-%5E7.2.0-blue)
 ![TDD](https://img.shields.io/badge/tdd-Tested%20100%25-blue)
@@ -9,8 +9,7 @@
 
 Este repositório contém uma estrutura padrão para módulos do Laravel seguindo o padrão do composer.
 
-A estrutura é recomendada pela comunidade do PHP para a criação de pacotes composer e segue o 
-seguinte formato:
+A estrutura é recomendada pela comunidade do PHP para a criação de pacotes composer e segue o seguinte formato:
 
 * `bin/` Caso existam scripts .sh, .php ou qualquer outro que seja executado na linha de comando
 * `docs/` Onde são armazenados os documentos mais detalhados do pacote
@@ -25,7 +24,7 @@ Exemplos de pacotes padronizados:
 * https://github.com/symfony/symfony
 * https://github.com/laravel/framework
 
-### Changelog
+## Changelog
 
 Por favor, leia o [changelog](changelog.md) para mais informações sobre as mudanças recentes.
 
@@ -40,7 +39,7 @@ ao invés de usar o issue tracker.
 
 ## Créditos
 
-- [Bueno Networks](https://github.com/bueno-networks)
+* [Bueno Networks](https://github.com/bueno-networks)
 
 ## Licença
 
