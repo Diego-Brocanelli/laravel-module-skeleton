@@ -3,5 +3,5 @@ composer.lock
 vendor
 node_modules
 .phpunit.result.cache
-.docker/laravel/bootstrap/*
+.docker/laravel/bootstrap/cache/*
 .docker/laarvel/storage/*

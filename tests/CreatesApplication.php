@@ -17,17 +17,12 @@ trait CreatesApplication
     {
         // A aplicação padrão do Laravel está instalada como dependência do composer
         $app = require dirname(__DIR__).'/vendor/laravel/laravel/bootstrap/app.php';
+
+        // Muda a localização do diretório de ambiente. 
+        // Onde se encontra o .env
+        $app->useEnvironmentPath(__DIR__.'/../../.docker/laravel/storage/');
+
         $app->make(Kernel::class)->bootstrap();
-
-        // O kernel do laravel precisa de uma chave criptográfica para poder funcionar
-        // por esse motivo, como o módulo utilizar uma instalação limpa do Laravel,
-        // é preciso gerar uma chava em tempo de execução para que os testes de funcionalidade
-        // possam funcionar normalmente
-        $config = $app->make('config');
-
-        $cipher = $config->get('app.cipher');
-        $key = 'base64:'.base64_encode(Encrypter::generateKey($cipher));
-        $app->make('config')->set('app.key', $key);
 
         // disponibiliza este módulo para o Laravel
         $app->register(SkeletonServiceProvider::class);

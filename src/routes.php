@@ -2,14 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/teste', function () {
+Route::get('/test', function () {
 
-//     return []; //view('skeleton::folder.teste');
-// });
+    return view('skeleton::folder.test-view')->with([
+        'title' => 'Teste Um'
+    ]);
 
-Route::namespace('Bnw\Skeleton\Controllers')->group(function(){
+});
 
-    Route::get('/teste/index', 'TesteController@index')->name('sss');
+Route::namespace('Bnw\Skeleton\Http\Controllers')->group(function(){
+
+    Route::get('/test/two', 'ExampleController@show')->name('example');
 
 });
 

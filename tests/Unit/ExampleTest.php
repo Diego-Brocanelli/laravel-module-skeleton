@@ -9,6 +9,6 @@ class ExampleTest extends TestCase
     /** @test */
     public function basicTest()
     {
-        $this->assertTrue(true);
+        $this->assertTrue(1 + 1 == 2);
     }
 }

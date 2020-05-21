@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Bnw\Skeleton;
 
 use Bnw\Skeleton\Commands\SkeletonCommand;
+use Bnw\Skeleton\Http\Controllers\AbcControlller;
+use Bnw\Skeleton\Http\Controllers\Teste;
+use Bnw\Skeleton\Http\Controllers\TesteController;
 use Illuminate\Support\ServiceProvider;
 
 /**

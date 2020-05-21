@@ -7,10 +7,16 @@ use Bnw\Skeleton\Tests\TestCase;
 class ExampleTest extends TestCase
 {
     /** @test */
-    public function basicTest()
+    public function basicOne()
     {
-        $response = $this->get('/');
+        $response = $this->get('/test');
         $response->assertStatus(200);
-        $this->assertTrue(true);
+    }
+
+    /** @test */
+    public function basicTwo()
+    {
+        $response = $this->get('/test/two');
+        $response->assertStatus(200);
     }
 }
