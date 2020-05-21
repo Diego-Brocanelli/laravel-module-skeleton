@@ -13,9 +13,9 @@ Nada implementado ainda.
 
 ### Added
 
-* Criação da estrutura básica do projeto.
+- Criação da estrutura básica do projeto.
 
 ## Releases
 
-* Unreleased <https://github.com/bueno-networks/skeleton/compare/v0.1.0...HEAD>
-* 0.1.0 <https://github.com/bueno-networks/skeleton/releases/tag/v0.1.0>
+- Unreleased <https://github.com/bueno-networks/skeleton/compare/v0.1.0...HEAD>
+- 0.1.0 <https://github.com/bueno-networks/skeleton/releases/tag/v0.1.0>
