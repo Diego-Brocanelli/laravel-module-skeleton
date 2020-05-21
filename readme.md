@@ -11,7 +11,7 @@ Este repositório contém uma estrutura padrão para módulos do Laravel seguind
 
 A estrutura é recomendada pela comunidade do PHP para a criação de pacotes composer e segue o seguinte formato:
 
-- `bin/` Caso existam scripts .sh, .php ou qualquer outro que seja executado na linha de comando
+- `bin/` Caso existam scripts `.sh`, `.php` ou qualquer outro que seja executado na linha de comando
 - `docs/` Onde são armazenados os documentos mais detalhados do pacote
 - `src/` O código fonte com as funcionalidades fornecidas pelo pacote
 - `tests/` Os testes de unidade, funcionalidade e integração que, por ventura, existam no projeto
@@ -19,10 +19,10 @@ A estrutura é recomendada pela comunidade do PHP para a criação de pacotes co
 
 Exemplos de pacotes padronizados:
 
-- https://github.com/thephpleague/flysystem
-- https://github.com/spatie/dropbox-api
-- https://github.com/symfony/symfony
-- https://github.com/laravel/framework
+- [https://github.com/thephpleague/flysystem](https://github.com/thephpleague/flysystem)
+- [https://github.com/spatie/dropbox-api](https://github.com/spatie/dropbox-api)
+- [https://github.com/symfony/symfony](https://github.com/symfony/symfony)
+- [https://github.com/laravel/framework](https://github.com/laravel/framework)
 
 ## Changelog
 
