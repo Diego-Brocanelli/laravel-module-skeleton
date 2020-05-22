@@ -60,13 +60,6 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-root-package-install": [
-            "@php -r \"echo 'root install';\""
-        ],
-        "post-create-project-cmd": [
-            "@php -r \"echo 'created project';\""
-        ]
-    }
+    "prefer-stable": true
+    
 }
