@@ -8,7 +8,7 @@ use Bnw\Skeleton\Commands\SkeletonCommand;
 use Bnw\Skeleton\Http\Controllers\AbcControlller;
 use Bnw\Skeleton\Http\Controllers\Teste;
 use Bnw\Skeleton\Http\Controllers\TesteController;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
  * O serviceProvider é a forma que um modulo se comunicar com o projeto principal do Laravel.
@@ -18,7 +18,7 @@ use Illuminate\Support\ServiceProvider;
  * Para mais iformações sobre módulos do Laravel,
  * leia https://laravel.com/docs/7.x/packages
  */
-class SkeletonServiceProvider extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Este método é invocado pelo Laravel apenas após todos os módulos serem registrados.

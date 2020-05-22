@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
 
-        Bnw\Skeleton\SkeletonServiceProvider::class,
+        Bnw\Skeleton\ServiceProvider::class,
 
         /*
          * Application Service Providers...
