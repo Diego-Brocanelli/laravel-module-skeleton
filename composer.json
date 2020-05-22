@@ -24,6 +24,7 @@
     ],
     "require": {
         "php": "^7.2",
+        "bnw/laravel-module-tools": "^0.2.1",
         "laravel/framework": "^7.0",
         "nesbot/carbon": "^2.0"
     },
