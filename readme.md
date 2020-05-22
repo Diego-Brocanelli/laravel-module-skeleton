@@ -2,9 +2,9 @@
 
 ![PHP Version](https://img.shields.io/badge/php-%5E7.2.0-blue)
 ![TDD](https://img.shields.io/badge/tdd-Tested%20100%25-blue)
-[![Build Status](https://travis-ci.org/bueno-networks/composer-skeleton-laravel.svg?branch=master)](https://travis-ci.org/ricardopedias/markhelp)
-[![Latest Version](https://img.shields.io/github/release/bueno-networks/composer-skeleton-laravel.svg?style=flat-square)](https://github.com/bueno-networks/composer-skeleton-laravel/releases)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4bdf94ec532b46758a36fa0adebbe48d)](https://www.codacy.com/gh/bueno-networks/composer-skeleton-laravel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bueno-networks/composer-skeleton-laravel&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/bueno-networks/laravel-module-skeleton.svg?branch=master)](https://travis-ci.org/ricardopedias/markhelp)
+[![Latest Version](https://img.shields.io/github/release/bueno-networks/laravel-module-skeleton.svg?style=flat-square)](https://github.com/bueno-networks/laravel-module-skeleton/releases)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4bdf94ec532b46758a36fa0adebbe48d)](https://www.codacy.com/gh/bueno-networks/laravel-module-skeleton?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bueno-networks/laravel-module-skeleton&amp;utm_campaign=Badge_Grade)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](license.md)
 
 Este repositório contém uma estrutura padrão para módulos do Laravel seguindo o padrão do composer.
