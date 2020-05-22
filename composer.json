@@ -1,5 +1,5 @@
 {
-    "name": "bnw/laravel-skeleton-module",
+    "name": "bnw/laravel-module-skeleton",
     "description": "Este pacote contém uma estrutura para módulos do Laravel seguindo o padrão do composer",
     "keywords": [
         "bnw",
