@@ -1,6 +1,7 @@
 {
     "name": "bnw/laravel-module-skeleton",
     "description": "Este pacote contém uma estrutura para módulos do Laravel seguindo o padrão do composer",
+    "type": "project",
     "keywords": [
         "bnw",
         "skeleton",
@@ -54,8 +55,18 @@
         }
     },
     "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": false
+    "prefer-stable": true,
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"echo 'root install';\""
+        ],
+        "post-create-project-cmd": [
+            "@php -r \"echo 'created project';\""
+        ]
+    }
 }
