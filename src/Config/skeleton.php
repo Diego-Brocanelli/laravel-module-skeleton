@@ -11,7 +11,7 @@ return [
 
     'module_tag' => 'skeleton',
 
-    // Só é utilizado se o módulo for desenvolvido fora do docker
+    // Só é utilizado se o módulo precisar ser desenvolvido fora do docker
     'modules_path' => 'modules/',
 
 ];
