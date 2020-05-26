@@ -21,15 +21,24 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-     /** @test */
-     public function api()
-     {
-        $user = factory(User::class)->create();
+    /** @test */
+    public function apiCommon()
+    {
+        $response = $this->withSession(['foo' => 'bar'])
+                    ->get('/api/call-test');
 
-        $response = $this->actingAs($user)
-                    ->withSession(['foo' => 'bar'])
-                    ->get('/api/user');
-                         
          $response->assertStatus(200);
-     }
+    }
+
+    /** @test */
+    // public function apiAuth()
+    // {
+    //     $user = factory(User::class)->create();
+
+    //     $response = $this->actingAs($user)
+    //                 ->withSession(['foo' => 'bar'])
+    //                 ->get('/api/user-test');
+                         
+    //      $response->assertStatus(200);
+    // }
 }

@@ -5,9 +5,6 @@ declare(strict_types=1);
 namespace Bnw\Skeleton;
 
 use Bnw\Skeleton\Commands\SkeletonCommand;
-use Bnw\Skeleton\Http\Controllers\AbcControlller;
-use Bnw\Skeleton\Http\Controllers\Teste;
-use Bnw\Skeleton\Http\Controllers\TesteController;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 /**
@@ -62,7 +59,8 @@ class ServiceProvider extends BaseServiceProvider
         // para que não existam inconsistencias ou ausência de parâmetros usados pelo módulo
         $this->mergeConfigFrom(__DIR__.'/Config/skeleton.php', 'skeleton');
 
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+        $this->loadRoutesFrom(__DIR__ . '/Routes/web.php');
+        $this->loadRoutesFrom(__DIR__ . '/Routes/api.php');
 
         // Nos templates do Blade as views do módulo devem ser utilizadas com prefixo.
         // Ao invés de @include('minha.linda.view'), 
