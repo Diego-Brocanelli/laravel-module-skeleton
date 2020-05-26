@@ -2,7 +2,6 @@
 <?php
 
 use App\Console\Kernel as ConsoleKernel;
-use Bnw\Tools\ServiceProvider;
 use Bnw\Tools\Tools;
 
 define('LARAVEL_START', microtime(true));
@@ -23,15 +22,26 @@ require __DIR__.'/vendor/autoload.php';
 
 $app = require_once __DIR__.'/vendor/laravel/laravel/bootstrap/app.php';
 
+
 class Kernel extends ConsoleKernel
 {
+    /**
+     * The Artisan commands provided by your application.
+     *
+     * @var array
+     */
     protected $commands = [
         //
     ];
 
+    /**
+     * Register the commands for the application.
+     *
+     * @return void
+     */
     protected function commands()
     {
-        $this->commands = ServiceProvider::toolsCommands();
+        $this->commands = Bnw\Tools\ServiceProvider::toolsCommands();
         return parent::commands();
     }
 }
