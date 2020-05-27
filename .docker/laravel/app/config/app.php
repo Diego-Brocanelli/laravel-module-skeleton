@@ -1,5 +1,19 @@
 <?php
 
+$storage = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__), 'storage']);
+$boostrapCache = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__), 'bootstrap', 'cache']);
+
+if (is_writable($storage) === false) {
+    echo "O diretório .docker/laravel/storage não é gravável";
+    exit;
+    //throw new Exception("O diretório .docker/laravel/storage não é gravável");
+}
+
+if (is_writable($boostrapCache) === false) {
+    echo "O diretório .docker/laravel/bootstrap/cache não é gravável";
+    exit;
+}
+
 return [
 
     /*

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Bnw\Skeleton\Tests;
 
 use Bnw\Skeleton\ServiceProvider;
@@ -7,11 +9,6 @@ use Illuminate\Contracts\Console\Kernel;
 
 trait CreatesApplication
 {
-    /**
-     * Creates the application.
-     *
-     * @return \Illuminate\Foundation\Application
-     */
     public function createApplication()
     {
         // A aplicação padrão do Laravel está instalada como dependência do composer
@@ -23,7 +20,7 @@ trait CreatesApplication
 
         $app->make(Kernel::class)->bootstrap();
 
-        // disponibiliza este módulo para o Laravel
+        // Disponibiliza este módulo para o Laravel
         $app->register(ServiceProvider::class);
 
         return $app;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Bnw\Skeleton\Tests\Unit;
 
 use Bnw\Skeleton\Tests\TestCase;

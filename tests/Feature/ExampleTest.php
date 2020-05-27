@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Bnw\Skeleton\Tests\Feature;
 
-use App\User;
 use Bnw\Skeleton\Tests\TestCase;
 
 class ExampleTest extends TestCase
@@ -33,7 +34,7 @@ class ExampleTest extends TestCase
     /** @test */
     // public function apiAuth()
     // {
-    //     $user = factory(User::class)->create();
+    //     $user = factory(App\User::class)->create();
 
     //     $response = $this->actingAs($user)
     //                 ->withSession(['foo' => 'bar'])
