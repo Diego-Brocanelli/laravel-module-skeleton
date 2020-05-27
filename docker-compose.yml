@@ -14,7 +14,6 @@ services:
           - ./vendor/:/application/vendor/
           - ./:/application/mod/
           - ./src/:/application/src/
-          - ./docker-compose.yml:/application/src/docker-compose.yml
           - ./.docker/laravel/app/.env:/application/.env
           - ./.docker/laravel/app/config/app.php:/application/config/app.php
           - ./.docker/laravel/bootstrap/cache/:/application/bootstrap/cache/
@@ -32,7 +31,6 @@ services:
         - ./vendor/:/application/vendor/
         - ./:/application/mod/
         - ./src/:/application/src/
-        - ./docker-compose.yml:/application/src/docker-compose.yml
         - ./.docker/laravel/app/.env:/application/.env
         - ./.docker/laravel/app/config/app.php:/application/config/app.php
         - ./.docker/laravel/bootstrap/cache/:/application/bootstrap/cache/
