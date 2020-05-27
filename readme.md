@@ -21,17 +21,16 @@ Isso pode ser alterado facilmente através de comandos especiais do Artisan, com
 
 ## Como usar o projeto
 
-O pacote possui uma contextualização modular do Laravel, permitindo que o programador implemente módulos para o Laravel, sem a necesidade de uma instalação real do Laravel.
+O pacote possui uma contextualização modular do Laravel, permitindo que o programador implemente módulos sem a necessidade de uma instalação real do Laravel.
 
-O Artisan está disponível também, para facilitar a utilização de comandos 
-diretamente no pacote.
+O Artisan está disponível também, para facilitar a utilização de comandos diretamente no pacote.
 
 ### Namespace
 
 Por padrão, o namespace é Bnw\Skeleton. Para mudar isso, basta executar o comando no terminal:
 
 ```
-php artisan bnw:module:rename
+php artisan bnw:rename
 ```
 
 O comando irá perguntar sobre o que deverá ser renomeado dentro do módulo.
@@ -40,7 +39,7 @@ Também é possível especificar os parêmetros para o comando, evitando assim q
 Para mais informações, use: 
 
 ```
-php artisan bnw:module:rename --help
+php artisan bnw:rename --help
 ```
 
 ### Testes
